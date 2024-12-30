@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:ProjectByZz}/AccountAPI",
+            "name": "Debug App (AccountAPI)",
+            "program": "${workspaceFolder:ProjectByZz}/AccountAPI/.build/debug/App",
+            "preLaunchTask": "swift: Build Debug App (AccountAPI)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:ProjectByZz}/AccountAPI",
+            "name": "Release App (AccountAPI)",
+            "program": "${workspaceFolder:ProjectByZz}/AccountAPI/.build/release/App",
+            "preLaunchTask": "swift: Build Release App (AccountAPI)"
+        }
+    ]
+}
