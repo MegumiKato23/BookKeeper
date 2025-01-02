@@ -29,9 +29,30 @@ struct BudgetController: RouteCollection {
             .filter(\.$user.$id == userID)
             .filter(\.$type == type)
             .first() else {
-            throw Abort(.notFound, reason: "未找到预算记录")
+            return BudgetDTO(budget: 0)
         }
 
+        // 获取当前时间
+        let currentDate = Date()
+        let calendar = Calendar.current
+        let currentYear = calendar.component(.year, from: currentDate)
+        let currentMonth = calendar.component(.month, from: currentDate)
+        
+        // 检查预算创建时间
+        if type == .month {
+            let createdMonth = calendar.component(.month, from: budget.createdAt ?? currentDate)
+            if currentMonth != createdMonth {
+                try await budget.delete(on: req.db)
+                return BudgetDTO(budget: 0)
+            }
+        } else if type == .year {
+            let createdYear = calendar.component(.year, from: budget.createdAt ?? currentDate)
+            if currentYear != createdYear {
+                try await budget.delete(on: req.db)
+                return BudgetDTO(budget: 0)
+            }
+        }
+        
         return budget.toDTO()
     }
 

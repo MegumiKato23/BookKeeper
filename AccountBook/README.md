@@ -1,42 +1,95 @@
 # AccountBook 记账应用
 
-基于SwiftUI开发的iOS记账应用，提供简洁优雅的用户界面和完整的记账功能。
+<p align="center">
+<img src="https://img.shields.io/badge/Swift-5.9-orange.svg" />
+<img src="https://img.shields.io/badge/iOS-16.0%2B-blue.svg" />
+<img src="https://img.shields.io/badge/license-MIT-brightgreen.svg" />
+</p>
 
-## 功能特点
+基于 SwiftUI 开发的优雅直观的个人理财 iOS 应用，提供全面的支出跟踪和预算管理功能，并采用现代化的用户界面设计。
 
-- 📊 月度账单明细查看
-- 💰 支出/收入分类统计
-- 📈 预算管理
-- ➕ 便捷的账单添加
-- 👤 用户信息管理
+## ✨ 功能特点
 
-## 技术栈
+- 📊 **月度报表概览**
+- 详细的每月支出跟踪
+- 可视化支出趋势和模式
+- 自定义日期范围视图
 
-- SwiftUI
-- Async/Await
-- Charts Framework
-- MVVM架构
+- 💰 **收支管理**
+- 多类别支持
+- 详细的交易历史记录
+- 快速交易录入
+- 自定义类别创建
 
-## 项目结构
+- 📈 **预算规划**
+- 月度预算设置
+- 分类预算分配
+- 预算与实际支出分析
+- 超支提醒
+
+- 🔄 **智能功能**
+- 循环交易
+- 交易模板
+- 快捷操作
+- 数据备份与同步
+
+- 👤 **个人档案管理**
+- 安全认证
+- 个性化设置
+- 数据导出功能
+
+## 🛠 技术栈
+
+- **SwiftUI** - 现代声明式 UI 框架
+- **Swift Async/Await** - 现代并发处理
+- **Charts Framework** - 原生数据可视化
+- **MVVM Architecture** - 清晰的关注点分离
+- **Core Data** - 本地数据持久化
+- **SwiftLint** - 代码质量控制
+
+## 📁 项目结构
 
 ```
 AccountBook/
-├── Views/           # 视图组件
+├── Views/           # 界面组件
 │   ├── Main/        # 主要视图
-│   ├── Detail/      # 明细相关视图
-│   ├── Add/         # 添加账单相关视图
-│   └── Profile/     # 用户相关视图
+│   ├── Detail/      # 详情视图
+│   ├── Add/         # 交易录入视图
+│   └── Profile/     # 用户档案视图
 ├── Models/          # 数据模型
 ├── ViewModels/      # 视图模型
 └── Utils/           # 工具类
 ```
 
-## 开发进度
+## ⚙️ 系统要求
 
-- [x] 项目初始化
-- [ ] 主界面框架搭建
-- [ ] 明细界面实现
-- [ ] 添加账单界面实现
-- [ ] 用户界面实现
-- [ ] 数据持久化
-- [ ] UI优化与测试 
+- iOS 16.0+
+- Xcode 15.0+
+- Swift 5.9+
+
+## 🏗 架构
+
+应用采用 MVVM (Model-View-ViewModel) 架构：
+- **Models**: 核心数据模型和业务逻辑
+- **Views**: SwiftUI 视图和 UI 组件
+- **ViewModels**: 数据绑定和业务逻辑处理
+- **Utils**: 辅助函数和扩展
+
+## 🎨 主题定制
+
+应用支持多种主题，易于定制：
+- 支持浅色/深色模式
+- 自定义配色方案
+- 自适应 UI 元素
+- 动态字体支持
+
+## 🔒 隐私与安全
+
+- 本地数据加密
+- 安全认证
+- 隐私数据处理
+- 定期安全更新
+
+## 📄 许可证
+
+本项目采用 MIT 许可证 - 详情请查看 LICENSE 文件

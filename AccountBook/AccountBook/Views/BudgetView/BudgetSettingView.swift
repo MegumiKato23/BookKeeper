@@ -94,7 +94,7 @@ struct BudgetSettingView: View {
         errorMessage = nil
         
         Task { @MainActor in
-            if budget != nil {
+			if budget?.user != nil {
                 let updatedBudget = BudgetDTO(budget: amount, description: description, type: selectedType)
                 try await budgetAPI.updateBudget(userID: userID, budget: updatedBudget) { result in
                     switch result {
