@@ -44,7 +44,6 @@
 
 ## ⭐️ 功能特点
 
-- 🔐 完整的用户认证体系
 - 📊 可视化的收支统计
 - 📅 多维度的预算管理
 - 🔄 自动数据同步
@@ -111,47 +110,3 @@ open AccountBook.xcworkspace
 
 3. 配置开发者证书和配置文件
 4. 构建和运行项目
-
-## 👨‍💻 开发指南
-
-### 开发环境设置
-
-1. 克隆代码库
-2. 安装必要的工具和依赖：
-- Xcode 14.0+
-- Swift 5.8+
-- Docker Desktop
-- Postman（API测试）
-- MySQL Workbench（可选）
-
-### 开发流程
-
-1. 创建功能分支
-```bash
-git checkout -b feature/your-feature-name
-```
-
-2. 提交代码
-```bash
-git add .
-git commit -m "feat: 添加新功能"
-```
-
-3. 发起合并请求
-- 提交PR到develop分支
-- 等待代码审查
-- 合并代码
-
-### 编码规范
-
-- Swift代码遵循[Swift Style Guide](https://google.github.io/swift/)
-- 使用SwiftLint进行代码规范检查
-- 遵循Git Commit Message规范
-
-
-## 🤝 参与贡献
-
-1. Fork 项目
-2. 创建功能分支
-3. 提交变更
-4. 发起 Pull Request
