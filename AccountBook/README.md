@@ -3,7 +3,6 @@
 <p align="center">
 <img src="https://img.shields.io/badge/Swift-5.9-orange.svg" />
 <img src="https://img.shields.io/badge/iOS-16.0%2B-blue.svg" />
-<img src="https://img.shields.io/badge/license-MIT-brightgreen.svg" />
 </p>
 
 基于 SwiftUI 开发的优雅直观的个人理财 iOS 应用，提供全面的支出跟踪和预算管理功能，并采用现代化的用户界面设计。
@@ -27,16 +26,6 @@
 - 预算与实际支出分析
 - 超支提醒
 
-- 🔄 **智能功能**
-- 循环交易
-- 交易模板
-- 快捷操作
-- 数据备份与同步
-
-- 👤 **个人档案管理**
-- 安全认证
-- 个性化设置
-- 数据导出功能
 
 ## 🛠 技术栈
 
@@ -75,21 +64,9 @@ AccountBook/
 - **ViewModels**: 数据绑定和业务逻辑处理
 - **Utils**: 辅助函数和扩展
 
-## 🎨 主题定制
-
-应用支持多种主题，易于定制：
-- 支持浅色/深色模式
-- 自定义配色方案
-- 自适应 UI 元素
-- 动态字体支持
-
 ## 🔒 隐私与安全
 
 - 本地数据加密
 - 安全认证
 - 隐私数据处理
 - 定期安全更新
-
-## 📄 许可证
-
-本项目采用 MIT 许可证 - 详情请查看 LICENSE 文件
