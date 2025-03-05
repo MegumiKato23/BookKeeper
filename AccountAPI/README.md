@@ -20,21 +20,13 @@ This is a robust backend service developed with Vapor framework for the AccountB
 
 ## Features / 核心功能
 
-- 用户认证与授权 (User Authentication and Authorization)
-- 基于 JWT 的身份认证
-- 基于角色的访问控制
 - 账单管理 (Bill Management)
 - 支持创建、读取、更新、删除操作
-- 批量处理支持
 - 预算追踪 (Budget Tracking)
 - 月度/年度预算规划
 - 实时追踪
 - 交易记录 (Transaction Records)
-- 多币种支持
 - 分类管理
-- 数据统计分析 (Data Analytics)
-- 消费模式分析
-- 自定义报表
 
 ## Project Structure / 项目结构
 
